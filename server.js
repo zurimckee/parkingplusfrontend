@@ -13,7 +13,7 @@ app.use(express.json());
 // lots enpoint - lot occupancy summary
 app.get('/api/lots/summary', async (req, res) => {
     try {
-        const [rows] = await pool.query('SELECT * FROM Lot_Status_Summary');
+        const [rows] = await pool.query('SELECT ls.*, l.Latitude, l.Longitude, l.Lot_Type FROM Lot_Status_Summary ls JOIN Lots l ON ls.Lot_ID = l.Lot_ID');
         res.json(rows);
     
     } catch (error) {
@@ -24,7 +24,7 @@ app.get('/api/lots/summary', async (req, res) => {
 // grab all spots
 app.get('/api/spots/all', async (req, res) => {
     try {
-        const [rows] = await pool.query('SELECT * FROM Spots');
+        const [rows] = await pool.query('SELECT s.*, l.Lot_Type FROM Spots s JOIN Lots l ON s.Lot_ID = l.Lot_ID');
         res.json(rows);
     } catch (error) {
         res.status(500).json({error: error.message});

@@ -3,7 +3,8 @@ import {fetchLotSummary, fetchSpots } from './services/api';
 import Header from './components/Header';
 import LotSelector from './components/LotSelector';
 import SpotGrid from './components/SpotGrid';
-import BottomNav from './components/BottomNav';
+import Footer from './components/Footer';
+import './App.css' 
 
 export default function App() {
     const [lots, setLots] = useState([]);
@@ -54,11 +55,13 @@ export default function App() {
     if (lots.length === 0) return <div>No lots found — check your API</div>
 
     return (
-        <div className="min-h-screen bg-gradient-to-b from-green-50 to-white pb-20">
+        <div className="min-h-screen bg-gradient-to-b from-green-50 to-white">
             <Header
-                lot = {currentLot}
-                onRefresh = {loadData}
-                lastUpdate = {lastUpdate}
+                lot={currentLot}
+                lots={lots}
+                onRefresh={loadData}
+                lastUpdate={lastUpdate}
+
             />
 
             <LotSelector
@@ -72,7 +75,7 @@ export default function App() {
                 spots = {currentSpots}
                 lastUpdate = {lastUpdate}
             />
-            <BottomNav/>
+            <Footer/>
         </div>
             
     );
