@@ -14,10 +14,8 @@
     "react-dom": "^19.2.5"
   },
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "start": "vite preview --port $PORT --host"
+    "start": "node server.js",
+    "dev": "vite"
   }
 
 }
