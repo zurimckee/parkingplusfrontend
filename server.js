@@ -6,7 +6,13 @@ import pool from './dbcall.js';
 dotenv.config();
 
 const app = express();
-app.use(cors());
+app.use(cors({
+    origin:[
+    'https://smartparkplusapp.vercel.app/',
+    'http://localhost:5173'
+    ]
+}));
+
 app.use(express.json());
 
 

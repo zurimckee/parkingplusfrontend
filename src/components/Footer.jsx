@@ -158,7 +158,7 @@ export default function Footer() {
 
                 {/* Bottom bar */}
                 <div className="border-t border-green-700 pt-4 flex flex-col md:flex-row items-center justify-between gap-2 text-xs text-green-400">
-                    <span>© {new Date().getFullYear()} Smart Parking+. Julius, Mac & Jay.</span>
+                    <span>© {new Date().getFullYear()} Smart Parking+. Julius, Marcos, Mac & Jay.</span>
                 </div>
             </div>
         </footer>
