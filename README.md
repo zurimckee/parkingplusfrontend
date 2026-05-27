@@ -1,3 +1,5 @@
+** currently inactive because my Railway free plan ran out! currently debating whether or not to pay to have it deployed or migrate everything 😫
+
 # 🅿️ SmartParkingPlus - Frontend
 
 **Live Demo:** [SmartParkingPlus App](https://smartparkplusapp.vercel.app/)
@@ -14,4 +16,5 @@ Smart Parking Plus is built to solve the hassle of finding and managing parking 
 
 
 Created using React(Vite), Javascript, Node/Express, Deployed using Vercel
+
 
