@@ -22,13 +22,14 @@ front-end
 - [X] javascript
 - [X] css
 - [X] deployed on vercel
+      
 back-end
 - [X] node.js/express
 - [X] mysql
 - [X] deployed on railway
 
 ### data flow
-[ React Frontend ] ---> HTTP/REST API ---> [ Backend API - Railway ] SQL Queries ---> [ MySQL Database - Railway ]
+[ react frontend ] ---> http/rest api ---> [ backend api - railway ] sql queries ---> [ mysql database - railway ]
 
 
 
