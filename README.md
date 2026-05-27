@@ -28,15 +28,7 @@ back-end
 - [X] deployed on railway
 
 ### data flow
-[ React Frontend ]
-        |
-        |  HTTP (REST API)
-        ↓
-[ Backend API - Railway ]
-        |
-        |  SQL Queries
-        ↓
-[ MySQL Database - Railway ]
+[ React Frontend ] ---> HTTP/REST API ---> [ Backend API - Railway ] SQL Queries ---> [ MySQL Database - Railway ]
 
 
 
