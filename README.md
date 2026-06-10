@@ -1,12 +1,9 @@
-# 🅿️ SmartParkingPlus - Frontend
-
-**currently inactive because my railway free plan ran out! currently debating whether or not to pay to have it deployed or migrate everything 😫**
-
+# 🅿️ SmartParkingPlus 
 
 ### check it out! [smartparkingplus](https://smartparkplusapp.vercel.app/)
 
 ### overview
-smartparkingplus is a full-stack web app designed to streamline parking lot/spot management through a modern frontend interface and a cloud-hosted backend powered by a custom mysql database. this repository contains the frontend application, which communicates with a backend api deployed alongside a mysql database hosted on Railway.
+smartparkingplus is a full-stack web app designed to streamline parking lot/spot management through a modern frontend interface and a cloud-hosted backend powered by a custom mysql database. this repository contains the client-facing application, which uses express/node to call the custom mysql database hosted on railway.
 
 ### features
 * constantly accurate spot display, updating data every sixty seconds
